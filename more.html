@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zoo-gallery</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="full-img" id="fullImg">
+      <img src="images/img1.jpg" id="imgImg" />
+      <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="container">
+      <h1 class="gallery">BIRDS</h1>
+    </div>
+    <div class="img-gallery">
+      <img src="images/img18.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img19.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img20.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img21.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img23.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img22.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img24.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img25.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img26.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img27.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img28.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img29.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img30.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img31.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img32.jpg" onclick="openFullImg(this.src)" />
+      <img src="images/img33.jpg" onclick="openFullImg(this.src)" />
+    </div>
+    <script>
+      var fullImg = document.getElementById("fullImg");
+      var imgImg = document.getElementById("imgImg");
+      function openFullImg(pic) {
+        fullImg.style.display = "flex";
+        imgImg.src = pic;
+      }
+      function closeFullImg() {
+        fullImg.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
